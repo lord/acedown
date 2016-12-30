@@ -1,16 +1,11 @@
 {
   "name": "acedown",
-  "version": "1.0.0",
-  "description": "",
-  "main": "myrender.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "webpack": "^1.14.0"
   },
