@@ -2,6 +2,8 @@
 
 I think <https://ace.c9.io/#nav=api&api=edit_session> is a complete list of the public API for `VirtualRenderer`. In particular look at `setSession`
 
+Ah, it looks like `session.getLine` is called in `TextLayer`, outside of the `VirtualRenderer`. We can maybe just remove all of the layers and write our own virtualrenderer to handle everything?
+
 ## All variables stored on `VirtualRenderer`
 
     this.container = container || dom.createElement("div");
