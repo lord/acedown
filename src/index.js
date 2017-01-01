@@ -10,5 +10,5 @@ require('brace/keybinding/vim');
 var session = ace.createEditSession("", "ace/mode/lua");
 var renderer = new VirtualRenderer(document.getElementById('editor'), "ace/theme/solarized_dark");
 var editor = new Editor(renderer, session);
-
+editor.setOption("scrollPastEnd", 1);
 editor.setKeyboardHandler("ace/keyboard/vim");
